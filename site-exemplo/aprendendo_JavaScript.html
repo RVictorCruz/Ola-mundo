@@ -20,15 +20,21 @@
 
 
             <script>
+                alert("Vamos estudar?");
                 var ano = 2022;
                 function pularLinha(){
                     document.write("<br>");
                 }
-                alert("Vamos estudar?");
+                function exibir(mostra){
+                    document.write(mostra);
+                    pularLinha();
+                }
+                
 
-                document.write("Victor nasceu em 1994 e hoje em dia tem " + (ano - 1994) + " anos");
-                pularLinha();
-                document.write("A irmã de Victor nasceu em 1992 e hoje em dia tem " + (ano -1992) + " anos");
+            exibir("Victor nasceu em 1994 e hoje em dia tem " + (ano - 1994) + " anos");
+            exibir("A irmã de Victor nasceu em 1992 e hoje em dia tem " + (ano -1992) + " anos");
+            exibir("Para arrendonda um numero se utiliza Math.routh, irei usar em 20.999 " + "<br> numero arrendondado: " + Math.round(20.999));
+            exibir("Duvido funcionar");
 
 
 
