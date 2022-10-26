@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script>
+var pesoVictor = 84;
+var alturaVictor = 1.70;
+
+var imcVictor = pesoVictor/(alturaVictor * alturaVictor);
+
+document.write(Math.round(imcVictor) + "<br>");
+
+var pesoAmigo = 60;
+var alturaAmigo = 1.50;
+
+var imcAmigo = pesoAmigo/(alturaAmigo * alturaAmigo);
+document.write(Math.round(imcAmigo) + "<br>");
+
+//Forma usando função
+
+function calcularImc (peso, altura){
+    var imc = peso/(altura * altura);
+    document.write(Math.round(imc));
+
+}
+calcularImc(84, 1.70);
+
+
+
+</script>
