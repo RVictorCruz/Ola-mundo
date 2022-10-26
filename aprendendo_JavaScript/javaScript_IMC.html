@@ -22,6 +22,13 @@ function calcularImc (peso, altura){
 }
 calcularImc(84, 1.70);
 
+function calcularImc2 (peso1, altura1){
+    var imc = peso1/(altura1 * altura1);
+    return imc;
+
+}
+var victor = calcularImc2(84, 1.70);
+document.write("O IMC de victor é: " + Math.round(victor));
 
 
 </script>
