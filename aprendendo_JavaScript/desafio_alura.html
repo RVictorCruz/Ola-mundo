@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf=8">
+        <title>Desafio Alura 1</title>
+    </head>
+    <body>
+        <h1>Jogo de advinhação</h1>
+
+
+
+        <script>
+            function pularLinha (){
+                document.write("<br>");
+            }
+            function mostrar(exibir) {
+                document.write(exibir);
+                pularLinha();
+            }
+
+            function sorteia (){
+                return Math.round(Math.random());
+            }
+
+            var numeroPensado = sorteia();
+            var numeroUsuario = parseInt(prompt("Digite um numero e teste a sua sorte!!!"));
+
+            if(numeroUsuario == numeroPensado){
+                mostrar("Você acertou!!! Parabéns");
+            }if (numeroUsuario > numeroPensado){
+                mostrar("Seu numero foi maior que o numero Pensado por mim!!!" + numeroPensado);
+            }if (numeroUsuario < numeroPensado){ 
+                mostrar("Seu numero foi menor do que o pensei" + numeroPensado);
+            }
+
+
+        </script>
+    </body>
+</html>
