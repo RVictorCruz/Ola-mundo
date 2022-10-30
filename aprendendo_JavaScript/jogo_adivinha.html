@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o numero</title>
+</head>
+<body>
+    
+</body>
+
+
+<script>
+
+function pularLinha () {
+    document.write("<br>");
+}
+
+function mostrar (exibir){
+    document.write(exibir);
+    pularLinha();
+}
+
+var numero_da_sorte = Math.round(Math.random() * 10);
+console.log(numero_da_sorte);
+var nome = prompt("Vamos jogar? o nome do jogo é: (adivinhe o numero que estou pensando), por favor digite seu nome: ");
+var tentativa1 = prompt("Vamos medir a sua sorte " + nome + " ? digite um numero:");
+
+if (numero_da_sorte == tentativa1){
+    mostrar("Você acertou!!!");
+}else{
+    mostrar("Você erro!!!" + numero_da_sorte);
+}
+
+
+
+
+
+</script>
+</html>

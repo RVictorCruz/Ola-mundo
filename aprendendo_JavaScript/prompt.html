@@ -1,13 +1,34 @@
 <meta charset="utf-8">
 <script>
+
+
+function pularLinha (){
+    document.write("<br>");
+
+}
+function mostrar(exibir){
+    document.write(exibir);
+}
+
+
+
 function calcularImc (peso, altura){
     var imc = peso/(altura * altura);
     return imc;
 }
 var peso1 = prompt("digite o seu peso para calcular o sei imc: ");
 var altura1 = prompt("digite a sua altura");
-document.write("O valor do seu imc é : " + Math.round(calcularImc(peso1, altura1)));
+calculoImc = Math.round(calcularImc(peso1, altura1));
 
+if(calculoImc < 18.5 ){
+   mostrar("O seu IMC está abaixo do recomendado 18.5: " + calculoImc);
+}
+if(calculoImc >= 18.5 && calculoImc <= 35){
+    mostrar("O seu IMC está dentro da média entre 18.5 e 35: " + calculoImc);
+}
+if(calculoImc > 35){
+    mostrar("O seu IMC está alto, acima de 35: " + calculoImc);
+}
 
 
 </script>
